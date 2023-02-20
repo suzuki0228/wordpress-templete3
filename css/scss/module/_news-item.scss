@@ -1,0 +1,52 @@
+// news-item
+.news-item {
+    $selector: #{&};
+
+    @include responsive("pc") {
+        flex-wrap: nowrap;
+    }
+    display: flex;
+    flex-wrap: wrap;
+
+    // date
+    &__date {
+        @include responsive("pc") {
+            margin: 0 1.6rem 0 0;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 3.2rem 1.6rem 0;
+    }
+    // category
+    &__category {
+        @include responsive("pc") {
+            margin: 0 1.6rem 0 0;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 3.2rem 1.6rem 0;
+    }
+    &__category-label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 12rem;
+        padding: 0.3rem 0.6rem;
+        border: 2px solid $color_main;
+        color: $color_main;
+        font-size: 1.4rem;
+    }
+    // title
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color_black;
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+}

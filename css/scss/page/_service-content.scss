@@ -1,0 +1,23 @@
+// service-content
+.service-content {
+    // container
+    &__container{
+        @include container("default");
+    }
+    // heading
+    &__heading {
+        margin-bottom:6.4rem;
+    }
+    // list
+    &__list {
+        max-width: 100rem;
+        margin:0 auto;
+    }
+    &__list-item {
+        margin-bottom: 4.8rem;
+    }
+    // guide
+    &__guide {
+        margin-top:6.4rem;
+    }
+}

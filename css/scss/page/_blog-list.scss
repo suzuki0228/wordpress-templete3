@@ -1,0 +1,20 @@
+// blog-list
+.blog-list {
+    // container
+    &__container {
+        @include container("default");
+    }
+    // list
+    &__list {
+        margin: 0;
+    }
+    &__list-item {
+        &:not(:last-child) {
+            margin: 0 0 4.8rem 0;
+        }
+    }
+    // pagination
+    &__pagination {
+        padding-top: 6.4rem;
+    }
+}

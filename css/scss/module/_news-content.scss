@@ -1,0 +1,64 @@
+// news-content
+.news-content {
+    
+    $font_h1_size: 3.6rem;
+    $font_h2_size: 3.2rem;
+    $font_h3_size: 2.8rem;
+    $font_h4_size: 2.4rem;
+    $font_h5_size: 2.0rem;
+    $font_h6_size: 1.6rem;
+
+    font-size: 1.8rem;
+    line-height: 2.0;
+    letter-spacing: .05em;
+    text-align:left;
+
+    h1 {
+        margin-top: $font_h1_size * 1.0;
+        margin-bottom: $font_h1_size * .5;
+        font-size: 3.6rem;
+    }
+    h2 {
+        margin-top: $font_h2_size * 1.0;
+        margin-bottom: $font_h2_size * .5;
+        font-size: $font_h2_size;
+    }
+    h3 {
+        margin-top: $font_h3_size * 1.0;
+        margin-bottom: $font_h3_size * .5;
+        font-size: $font_h3_size;
+    }
+    h4 {
+        margin-top: $font_h4_size * 1.0;
+        margin-bottom: $font_h4_size * .5;
+        font-size: $font_h4_size;
+    }
+    h5 {
+        margin-top: $font_h5_size * 1.0;
+        margin-bottom: $font_h5_size * .5;
+        font-size: $font_h5_size;
+    }
+    h6 {
+        margin-top: $font_h6_size * 1.0;
+        margin-bottom: $font_h6_size * .5;
+        font-size: $font_h6_size;
+    }
+    p {
+        margin-top: 2.0em;
+        margin-bottom: 2.0em;
+    }
+    ul {
+        margin-top: 2.0em;
+        margin-bottom: 2.0em;
+    }
+    ol {
+        margin-top: 2.0em;
+        margin-bottom: 2.0em;
+    }
+    .box {
+        margin-top: 3.6em;
+        margin-bottom: 3.6em;
+        padding: 2.4em;
+        border: 4px solid #EFEFEF;
+    }
+}

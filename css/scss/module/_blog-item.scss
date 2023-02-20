@@ -1,0 +1,75 @@
+.blog-item {
+
+    $selector: #{&};
+
+    display: block;
+    max-width: 600px;
+    //height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: .8rem;
+    background: $color_white;
+    color: $color_black;
+    overflow: hidden;
+    @include shadow("item");
+    @include transition();
+    @media (min-width: 992px) {
+        display: flex;
+        max-width: 1000px;
+    }
+    // サムネイル部分
+    &__thumbnail {
+        @media (min-width: 992px) {
+            width: 40%;
+        }
+    }
+    &__thumbnail-image {
+        @include responsive_image();
+    }
+    // メイン部分
+    &__content {
+        padding: 1.6rem;
+        @media (min-width: 992px) {
+            width: 60%;
+            padding: 3.2rem;
+        }
+    }
+    &__title {
+        margin: 0 0 .8rem 0;
+        color: $color_black;
+        font-weight: 700;
+        font-size: 2.4rem;
+    }
+    &__read {
+        margin: 0 0 .8rem 0;
+        color: $color_grey;
+        font-size: 1.6rem;
+    }
+    // ボタン
+    &__button {
+        text-align: right;
+    }
+    &__button-more {
+        @include button();
+        padding: 1.2rem 2.4rem;
+        background: $color_grey_light;
+        border-radius: 100px;
+        color: $color_black;
+        &:after {
+            margin-left: 0.4rem;
+            @include font_icon("arrow-right");
+            @include transition();
+        }
+    }
+    // ホバー
+    &:hover {
+        @include shadow("item-hover");
+        #{$selector}__button-more {
+            background: darken($color_grey_light,5%);
+            color: $color_black;
+            &:after {
+                transform: translateX(4px);
+            }
+        }
+    }
+}

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>ブログ一覧</title>
+        <meta name="description" content="" />
+        <!-- ogp start -->
+        <meta property="og:url" content="" />
+        <meta property="og:type" content="" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:site_name" content="" />
+        <meta property="og:image" content="" />
+        <!-- //ogp end -->
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <!-- nav-header -->
+        <nav id="nav-header" class="nav-header">
+            <div class="nav-header__container">
+                <a href="./index.html" class="nav-header__logo">CORPORATE</a>
+                <ul class="nav-header__menu">
+                    <li class="nav-header__menu-item">
+                        <a href="./news.html" class="nav-header__link">NEWS</a>
+                    </li>
+                    <li class="nav-header__menu-item">
+                        <a href="./service.html" class="nav-header__link">SERVICE</a>
+                    </li>
+                    <li class="nav-header__menu-item">
+                        <a href="./works.html" class="nav-header__link">WORKS</a>
+                    </li>
+                    <li class="nav-header__menu-item">
+                        <a href="./blog.html" class="nav-header__link">BLOG</a>
+                    </li>
+                    <li class="nav-header__menu-item">
+                        <a href="./company.html" class="nav-header__link">COMPANY</a>
+                    </li>
+                    <li class="nav-header__menu-item">
+                        <a href="./contact.html" class="nav-header__contact">CONTACT</a>
+                    </li>
+                </ul>
+                <div class="nav-header__toggle js-nav-drawer-open">
+                    <div class="nav-header__toggle-line"></div>
+                    <div class="nav-header__toggle-line"></div>
+                    <div class="nav-header__toggle-line"></div>
+                </div>
+            </div>
+        </nav><!-- /nav-header -->
+        <nav id="nav-drawer" class="nav-drawer" data-open="false">
+            <div class="nav-drawer__container">
+                <div class="nav-drawer__menu-button">
+                    <button id="nav-drawer-close" class="nav-drawer__button-close">
+                        <div class="nav-drawer__button-close-line"></div>
+                        <div class="nav-drawer__button-close-line"></div>
+                    </button>
+                </div>
+                <ul class="nav-drawer__menu">
+                    <li class="nav-drawer__menu-item">
+                        <a href="./news.html" class="nav-drawer__link js-nav-drawer-link">
+                            <span class="nav-drawer__link-main">NEWS</span>
+                            <span class="nav-drawer__link-sub">新着情報</span>
+                        </a>
+                    </li>
+                    <li class="nav-drawer__menu-item">
+                        <a href="./service.html" class="nav-drawer__link js-nav-drawer-link">
+                            <span class="nav-drawer__link-main">SERVICE</span>
+                            <span class="nav-drawer__link-sub">サービス</span>
+                        </a>
+                    </li>
+                    <li class="nav-drawer__menu-item">
+                        <a href="./works.html" class="nav-drawer__link js-nav-drawer-link">
+                            <span class="nav-drawer__link-main">WORKS</span>
+                            <span class="nav-drawer__link-sub">制作実績</span>
+                        </a>
+                    </li>
+                    <li class="nav-drawer__menu-item">
+                        <a href="./blog.html" class="nav-drawer__link js-nav-drawer-link">
+                            <span class="nav-drawer__link-main">BLOG</span>
+                            <span class="nav-drawer__link-sub">ブログ</span>
+                        </a>
+                    </li>
+                    <li class="nav-drawer__menu-item">
+                        <a href="./company.html" class="nav-drawer__link js-nav-drawer-link">
+                            <span class="nav-drawer__link-main">COMPANY</span>
+                            <span class="nav-drawer__link-sub">会社情報</span>
+                        </a>
+                    </li>
+                    <li class="nav-drawer__menu-item">
+                        <a href="./contact.html" class="nav-drawer__link js-nav-drawer-link">
+                            <span class="nav-drawer__link-main">CONTACT</span>
+                            <span class="nav-drawer__link-sub">お問い合わせ</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="nav-drawer-overlay" class="nav-drawer__overlay"></div>
+        </nav>
+        <!-- nav-pagetop -->
+        <nav class="nav-pagetop js-nav-pagetop"></nav><!-- /nav-pagetop -->
+        <main id="wrapper" class="wrapper">
+            <!-- pagevisual -->
+            <section class="pagevisual">
+                <div class="pagevisual__container">
+                    <h2 class="pagevisual__text-main">Blog</h2>
+                    <div class="pagevisual__text-sub">ブログ</div>
+                </div>
+            </section><!-- /pagevisual -->
+            <!-- breadcrumbs -->
+            <article class="breadcrumbs">
+                <div class="breadcrumbs__container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__list-item">
+                            <a href="./index.html" class="breadcrumbs__link">HOME</a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <a href="./blog.html" class="breadcrumbs__link">ブログ</a>
+                        </li>
+                    </ul>
+                </div>
+            </article><!-- /breadcrumbs -->
+            <!-- blog-list -->
+            <section class="blog-list">
+                <div class="blog-list__container">
+                    <div class="blog-list__list">
+                        <article class="blog-list__list-item">
+                            <!-- blog-item -->
+                            <a href="./blog-detail.html" class="blog-item">
+                                <figure class="blog-item__thumbnail">
+                                    <img class="blog-item__thumbnail-image" src="./img/sample_image_16_9.jpg">
+                                </figure>
+                                <div class="blog-item__content">
+                                    <h3 class="blog-item__title">タイトルタイトルタイトルタイトル</h3>
+                                    <div class="blog-item__read">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト...</div>
+                                    <div class="blog-item__button">
+                                        <span class="blog-item__button-more">記事を読む</span>
+                                    </div>
+                                </div>
+                            </a><!-- /blog-item -->
+                        </article>
+                        <article class="blog-list__list-item">
+                            <!-- blog-item -->
+                            <a href="./blog-detail.html" class="blog-item">
+                                <figure class="blog-item__thumbnail">
+                                    <img class="blog-item__thumbnail-image" src="./img/sample_image_16_9.jpg">
+                                </figure>
+                                <div class="blog-item__content">
+                                    <h3 class="blog-item__title">タイトルタイトルタイトルタイトル</h3>
+                                    <div class="blog-item__read">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト...</div>
+                                    <div class="blog-item__button">
+                                        <span class="blog-item__button-more">記事を読む</span>
+                                    </div>
+                                </div>
+                            </a><!-- /blog-item -->
+                        </article>
+                        <article class="blog-list__list-item">
+                            <!-- blog-item -->
+                            <a href="./blog-detail.html" class="blog-item">
+                                <figure class="blog-item__thumbnail">
+                                    <img class="blog-item__thumbnail-image" src="./img/sample_image_16_9.jpg">
+                                </figure>
+                                <div class="blog-item__content">
+                                    <h3 class="blog-item__title">タイトルタイトルタイトルタイトル</h3>
+                                    <div class="blog-item__read">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト...</div>
+                                    <div class="blog-item__button">
+                                        <span class="blog-item__button-more">記事を読む</span>
+                                    </div>
+                                </div>
+                            </a><!-- /blog-item -->
+                        </article>
+                        <article class="blog-list__list-item">
+                            <!-- blog-item -->
+                            <a href="./blog-detail.html" class="blog-item">
+                                <figure class="blog-item__thumbnail">
+                                    <img class="blog-item__thumbnail-image" src="./img/sample_image_16_9.jpg">
+                                </figure>
+                                <div class="blog-item__content">
+                                    <h3 class="blog-item__title">タイトルタイトルタイトルタイトル</h3>
+                                    <div class="blog-item__read">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト...</div>
+                                    <div class="blog-item__button">
+                                        <span class="blog-item__button-more">記事を読む</span>
+                                    </div>
+                                </div>
+                            </a><!-- /blog-item -->
+                        </article>
+                        <article class="blog-list__list-item">
+                            <!-- blog-item -->
+                            <a href="./blog-detail.html" class="blog-item">
+                                <figure class="blog-item__thumbnail">
+                                    <img class="blog-item__thumbnail-image" src="./img/sample_image_16_9.jpg">
+                                </figure>
+                                <div class="blog-item__content">
+                                    <h3 class="blog-item__title">タイトルタイトルタイトルタイトル</h3>
+                                    <div class="blog-item__read">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト...</div>
+                                    <div class="blog-item__button">
+                                        <span class="blog-item__button-more">記事を読む</span>
+                                    </div>
+                                </div>
+                            </a><!-- /blog-item -->
+                        </article>
+                        <article class="blog-list__list-item">
+                            <!-- blog-item -->
+                            <a href="./blog-detail.html" class="blog-item">
+                                <figure class="blog-item__thumbnail">
+                                    <img class="blog-item__thumbnail-image" src="./img/sample_image_16_9.jpg">
+                                </figure>
+                                <div class="blog-item__content">
+                                    <h3 class="blog-item__title">タイトルタイトルタイトルタイトル</h3>
+                                    <div class="blog-item__read">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト...</div>
+                                    <div class="blog-item__button">
+                                        <span class="blog-item__button-more">記事を読む</span>
+                                    </div>
+                                </div>
+                            </a><!-- /blog-item -->
+                        </article>
+                        <article class="blog-list__list-item">
+                            <!-- blog-item -->
+                            <a href="./blog-detail.html" class="blog-item">
+                                <figure class="blog-item__thumbnail">
+                                    <img class="blog-item__thumbnail-image" src="./img/sample_image_16_9.jpg">
+                                </figure>
+                                <div class="blog-item__content">
+                                    <h3 class="blog-item__title">タイトルタイトルタイトルタイトル</h3>
+                                    <div class="blog-item__read">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト...</div>
+                                    <div class="blog-item__button">
+                                        <span class="blog-item__button-more">記事を読む</span>
+                                    </div>
+                                </div>
+                            </a><!-- /blog-item -->
+                        </article>
+                        <article class="blog-list__list-item">
+                            <!-- blog-item -->
+                            <a href="./blog-detail.html" class="blog-item">
+                                <figure class="blog-item__thumbnail">
+                                    <img class="blog-item__thumbnail-image" src="./img/sample_image_16_9.jpg">
+                                </figure>
+                                <div class="blog-item__content">
+                                    <h3 class="blog-item__title">タイトルタイトルタイトルタイトル</h3>
+                                    <div class="blog-item__read">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト...</div>
+                                    <div class="blog-item__button">
+                                        <span class="blog-item__button-more">記事を読む</span>
+                                    </div>
+                                </div>
+                            </a><!-- /blog-item -->
+                        </article>
+                        <article class="blog-list__list-item">
+                            <!-- blog-item -->
+                            <a href="./blog-detail.html" class="blog-item">
+                                <figure class="blog-item__thumbnail">
+                                    <img class="blog-item__thumbnail-image" src="./img/sample_image_16_9.jpg">
+                                </figure>
+                                <div class="blog-item__content">
+                                    <h3 class="blog-item__title">タイトルタイトルタイトルタイトル</h3>
+                                    <div class="blog-item__read">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト...</div>
+                                    <div class="blog-item__button">
+                                        <span class="blog-item__button-more">記事を読む</span>
+                                    </div>
+                                </div>
+                            </a><!-- /blog-item -->
+                        </article>
+                        <article class="blog-list__list-item">
+                            <!-- blog-item -->
+                            <a href="./blog-detail.html" class="blog-item">
+                                <figure class="blog-item__thumbnail">
+                                    <img class="blog-item__thumbnail-image" src="./img/sample_image_16_9.jpg">
+                                </figure>
+                                <div class="blog-item__content">
+                                    <h3 class="blog-item__title">タイトルタイトルタイトルタイトル</h3>
+                                    <div class="blog-item__read">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト...</div>
+                                    <div class="blog-item__button">
+                                        <span class="blog-item__button-more">記事を読む</span>
+                                    </div>
+                                </div>
+                            </a><!-- /blog-item -->
+                        </article>
+                    </div>
+                    <div class="blog-list__pagination">
+                        <!-- pagination -->
+                        <div class="pagination">
+                            <ul class="pagination__list">
+                                <li class="pagination__list-item">
+                                    <a href="./blog.html" class="pagination__link--prev">前へ</a>
+                                </li>
+                                <li class="pagination__list-item">
+                                    <span class="pagination__text--current">1</span>
+                                </li>
+                                <li class="pagination__list-item">
+                                    <a href="./blog.html" class="pagination__link">2</a>
+                                </li>
+                                <li class="pagination__list-item">
+                                    <a href="./blog.html" class="pagination__link">3</a>
+                                </li>
+                                <li class="pagination__list-item">
+                                    <span class="pagination__text--dots">…</span>
+                                </li>
+                                <li class="pagination__list-item">
+                                    <a href="./blog.html" class="pagination__link">5</a>
+                                </li>
+                                <li class="pagination__list-item">
+                                    <a href="./blog.html" class="pagination__link--next">次へ</a>
+                                </li>
+                            </ul>
+                        </div><!-- /pagination -->
+                    </div>
+                </div>
+            </section><!-- /blog-list -->
+            <!-- contact-guide -->
+            <section id="contact-guide" class="contact-guide">
+                <div class="contact-guide__container">
+                    <h2 class="contact-guide__heading">
+                        <div class="contact-guide__heading-main">Contact</div>
+                        <div class="contact-guide__heading-sub">お問い合わせ</div>
+                    </h2>
+                    <div class="contact-guide__message">テキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキスト</div>
+                    <div class="contact-guide__list">
+                        <div class="contact-guide__list-item">
+                            <a class="contact-guide__button">メールでお問い合わせ</a>
+                        </div>
+                        <div class="contact-guide__list-item">
+                            <a class="contact-guide__button">Twitterでお問い合わせ</a>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- /contact-guide -->
+        </main>
+        <!-- footer -->
+        <footer id="footer" class="footer">
+            <div class="footer__container">
+                <ul class="footer__menu">
+                    <li class="footer__menu-item">
+                        <a href="./index.html" class="footer__menu-item-link">TOP</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="./service.html" class="footer__menu-item-link">SERVICE</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="./works.html" class="footer__menu-item-link">WORKS</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="./price.html" class="footer__menu-item-link">PRICE</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="./blog.html" class="footer__menu-item-link">BLOG</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="./about.html" class="footer__menu-item-link">ABOUT</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="./contact.html" class="footer__menu-item-link">CONTACT</a>
+                    </li>
+                </ul>
+                <div class="footer__copy">Copyright©CORPORATE. All Rights Reserved.</div>
+            </div>
+        </footer><!-- /footer -->
+        <script src="./js/script.js"></script>
+    </body>
+</html>
